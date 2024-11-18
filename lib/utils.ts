@@ -1,3 +1,4 @@
+// import { authFormSchema } from './utils';
 /* eslint-disable no-prototype-builtins */
 import { type ClassValue, clsx } from "clsx";
 import qs from "query-string";
@@ -208,4 +209,6 @@ export const authFormSchema = (type: string) => z.object({
   // both
   email: z.string().email(),
   password: z.string().min(8),
+  username: z.string().min(8),
 })
+

@@ -1,0 +1,14 @@
+{
+    "tasks": {
+      "build": {
+        "outputLogs": "hash-only",
+        "inputs": ["src/**"],
+        "outputs": [".next/**", "!.next/cache/**"]
+      },
+      "my-sveltekit-app#build": {
+        "outputLogs": "hash-only", 
+        "inputs": ["src/**"], 
+        "outputs": [".svelte-kit/**"]
+      }
+    }
+  }
